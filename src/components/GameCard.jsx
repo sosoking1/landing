@@ -1,8 +1,26 @@
 /* global _JF */
 import { motion } from 'framer-motion';
-
+import { Helmet } from 'react-helmet-async';
 const GameCard = ({ game }) => {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": `${game.title} MOD`,
+    "description": game.description,
+    "image": game.banner,
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": game.rating.split(' ')[0],
+      "reviewCount": game.rating.match(/\d+/g)[1] + "000"
+    }
+  };
   return (
+    <>
+    <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(jsonLd)}
+        </script>
+      </Helmet>
     <motion.div
       className="max-w-md bg-gray-800 rounded-xl shadow-lg p-4 mb-1"
       initial={{ opacity: 0, y: 30 }}
@@ -14,6 +32,7 @@ const GameCard = ({ game }) => {
         <img
           src={game.banner}
           alt={game.title}
+          loading="lazy" 
           className="rounded-lg w-full h-auto"
         />
         {/* Game size badge (top-right) */}
@@ -54,6 +73,7 @@ const GameCard = ({ game }) => {
         Download Game
       </a>
     </motion.div>
+    </>
   );
 };
 
