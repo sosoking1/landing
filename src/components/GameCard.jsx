@@ -1,3 +1,4 @@
+/* global _Wi */
 import { motion } from "framer-motion";
 
 const GameCard = ({ game }) => {
@@ -40,9 +41,15 @@ const GameCard = ({ game }) => {
 
       <a
         href={game.link}
-        className="block text-center bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg font-semibold transition-colors"
-        target="_blank"
-        rel="noopener noreferrer"
+        className="block text-center bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg font-semibold"
+        onClick={(e) => {
+          e.preventDefault();
+          if (typeof _Wi === 'function') {
+            _Wi(); // Trigger CPA locker
+          } else {
+            window.location.href = game.link; // Fallback
+          }
+        }}
       >
         Download Game
       </a>

@@ -15,7 +15,7 @@ export const games = [
         "⚾ Ad-Free Gameplay",
         "🎮 Enhanced Graphics & Performance"
       ],
-      link: "https://your-cpa-link.com"
+      link: "https://your-deployment-url.com/4f06c3a"
     },
     {
         id: 2,
