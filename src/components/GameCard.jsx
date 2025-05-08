@@ -1,10 +1,10 @@
-/* global _Wi */
-import { motion } from "framer-motion";
+/* global _JF */
+import { motion } from 'framer-motion';
 
 const GameCard = ({ game }) => {
   return (
     <motion.div
-      className="max-w-md bg-gray-800 rounded-xl shadow-lg p-4 mb-1" // Added mb-6 for margin-bottom
+      className="max-w-md bg-gray-800 rounded-xl shadow-lg p-4 mb-1"
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
@@ -30,7 +30,7 @@ const GameCard = ({ game }) => {
         <p className="text-yellow-400 text-sm">⭐ {game.rating}</p>
       </div>
 
-      <h1 className="text-2xl font-bold mt-2">{game.title}</h1>
+      <h1 className="text-2xl font-bold mt-2 text-white">{game.title}</h1>
       <p className="mb-4 mt-2 text-gray-300">{game.description}</p>
 
       <ul className="list-disc ml-5 mb-4 space-y-2">
@@ -44,8 +44,8 @@ const GameCard = ({ game }) => {
         className="block text-center bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg font-semibold"
         onClick={(e) => {
           e.preventDefault();
-          if (typeof _Wi === 'function') {
-            _Wi(); // Trigger CPA locker
+          if (typeof _JF === 'function') {
+            _JF(); // Trigger CPA locker
           } else {
             window.location.href = game.link; // Fallback
           }
