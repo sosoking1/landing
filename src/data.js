@@ -48,6 +48,22 @@ export const games = [
           "⚡ Instant Production – No waiting for crops or factories!",  
           "✈️ Exclusive Airport & Helicopter Upgrades – Faster rewards!"  
         ]
+      },
+      {
+        id: 4,
+        title: "need for speed 2025 mobile",
+        rating: "4.8 (25 M reviews)",
+        size: "2,36 Go",
+        type: "Course",
+        banner: "https://blog.fr.playstation.com/tachyon/sites/10/2025/01/04f9efcbcdfec097b34449f55ed169e77e90fb33-scaled.jpg?fit=1024%2C1024",
+        description:"Need for Speed Online: Mobile Edition est un jeu de course palpitant et plein d'adrénaline qui offre un véritable défi aux amateurs de vitesse, de courses illégales et de personnalisation de voitures.",
+        features: [  
+          "✅ Premium Unlocked – Full game with no paywalls or restrictions!",  
+          "💰 Unlimited Money & Gold – Buy all cars and upgrades instantly!",  
+          "🏎️ All Vehicles & Customization Unlocked – Every car, paint, and part available!",  
+          "🚫 No Ads – Pure, uninterrupted racing action!",  
+          "⚡ Max Performance Tuning – Instantly upgrade any car to elite stats!"  
+        ]
       }
   ];
   
