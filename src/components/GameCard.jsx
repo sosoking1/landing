@@ -49,7 +49,7 @@ const GameCard = ({ game }) => {
           <span className="text-yellow-400 text-sm font-semibold">⭐ {game.rating}</span>
         </div>
 
-        <h1 className="text-xl font-bold text-white font-game mt-2">{game.title}</h1>
+        <h2 className="text-xl font-bold text-white font-game mt-2">{game.title}</h2>
         <p className="text-gray-300 text-sm mt-2 mb-3">{game.description}</p>
 
         {game.features.length > 0 && (
