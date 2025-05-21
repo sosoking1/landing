@@ -1,9 +1,9 @@
 {
-  "short_name": "hmgamess",
-  "name": "hmgamess - Premium Mod Games",
+  "short_name": "unlockedgamer",
+  "name": "UnlockedGamer - Mod APKs with Unlimited Features",
   "icons": [
     {
-      "src": "logo.ico",
+      "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
