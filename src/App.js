@@ -35,6 +35,7 @@ function App() {
           content="Download modded games with unlimited resources, unlocked features, and ad-free experience."
         />
         <meta property="og:image" content="https://unlockedgamer.netlify.app/logo.png" />
+        <link rel="icon" href="./favicon.ico" type="image/x-icon" />
       </Helmet>
 
       {/* AdBlocker Warning */}
