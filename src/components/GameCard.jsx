@@ -62,7 +62,7 @@ const GameCard = ({ game }) => {
           </ul>
         )}
 
-        <a
+<a
           href={game.link}
           className="block text-center bg-blue-600 hover:bg-blue-700 transition-colors text-white font-semibold py-2 px-4 rounded-lg text-sm shadow-md mt-2"
           onClick={(e) => {
